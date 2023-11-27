@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiran Lama Lopchan | Personal Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/026f1a1337.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" alt="logo images">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Kiran Lama</span> <br> from Nepal</h1>
+            </div>
+        </div>
+    </div>
+    <!-------about------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="user image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I have a background, as a software developer. I am deeply passionate about my work. My expertise spans across programming languages and web development technologies. For creating efficient web applications I am well versed in Python and Django. Moreover I have experience with.Net programming for building both Windows applications and web services as Java for its object oriented capabilities. When it comes to crafting user interfaces I have a foundation in front end technologies like HTML, CSS and JavaScript to ensure responsive designs. Database management is another area of my expertise; I have worked with MySQL and PostgreSQL to maintain data integrity and efficiency. Additionally my familiarity with JavaScript frameworks allows me to deliver feature rich web experiences. Keeping up with the industry trends is important to me which is why I am always seeking opportunities to expand my skill set while offering solutions to complex challenges. Lets build something extraordinary together!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Python/Django</span><br>Designing Web/App Serverside </li>
+                            <li><span>.Net Programming</span><br>Desktop App Development</li>
+                            <li><span>Java</span><br>Building Web/Desktop app</li>
+                            <li><span>JavaScript</span><br>Building Serverside WebApp</li>
+                            <li><span>HTML/CSS</span><br>Skeleton for WebSite</li>
+                            <li><span>Database</span><br>MySql,Postgress</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Sep 2022 - Mar 2023</span><br>Front End Developer</li>
+                            <li><span>Jan 2018 - Sep 2018</span><br>Computer Teacher</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>July 2023 - Current</span><br>Master of Information Technology</li>
+                            <li><span>Jan 2019 - Aug 2022</span><br>Bachelor of Science: Computing</li>
+                            <li><span>Aug 2015 - Oct 2010</span><br>Higher Secondary: Computer Science</li>
+                            <li><span>Apr 2005 - May 2015</span><br>School Leaving Certificate</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------services------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>I have experience, as a web developer specializing in Python and Django. I have a foundation in these technologies. Can provide robust and scalable backend solutions for modern web applications. Additionally my proficiency in Java enables me to tackle programming challenges ensuring the development of efficient systems. I am skilled in creating dynamic user interfaces using JavaScript frameworks, which results in interactive experiences, for users. Furthermore I possess an understanding of database management allowing me to ensure data integrity and optimize performance.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I am proud of my skills, in crafting the most cutting edge web application designs. My attention to detail and knowledge of user experience principles allow me to create highly functional designs. I stay up, to date with the design trends and technologies to develop interfaces that not attract users but also improve usability. Whether its an minimalistic aesthetic or a vibrant and captivating design I strive to deliver top notch results.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-desktop"></i>
+                    <h2>Desktop Software Development</h2>
+                    <p>I have a grasp of.NET programming. I am skilled, at creating desktop software solutions that work smoothly with the Windows environment. By utilizing the capabilities of the.NET framework I am able to bring efficiency and dependability to desktop applications. Additionally I specialize in designing user interfaces and implementing functionalities guaranteeing that the software not only meets but surpasses user expectations.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Database Knowledge</h2>
+                    <p>I have an understanding of database management, which's an important part of my skillset, as a developer. I am skilled in designing and optimizing database structures to ensure that data is secure and efficient in all of my projects. I have experience with database systems allowing me to choose and implement the appropriate solutions for different applications. Whether it involves creating SQL queries or seamlessly integrating databases into web and desktop applications my goal is to create scalable data solutions. I recognize the role that databases play in software performance. I am dedicated to applying this knowledge to deliver reliable high performing and well structured database solutions, for any development project.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------portfolio------------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="work1">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="work2">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="work3">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!----contact----->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>lamak540@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>0450212324</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/kiran.lama.9615/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/kiran-lama-lopchan-5504901a7/"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/kiran.lama.9615/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/kiran-lama-lopchan-5504901a7/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © kiran Lama. Made with <i class="fa-solid fa-heart"></i> by Kiran Lama Lopchan</p>
+        </div>
+    </div>
+    <script>
+        let tablinks = document.getElementsByClassName("tab-links");
+        let tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        let sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxwr2bM8U6EWiLD5Pu7Un67RoO_bDQ0hzDA8s4lBhZOVTSfH-K3fkEwYsXmQd2pwJJl/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent sucessfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
