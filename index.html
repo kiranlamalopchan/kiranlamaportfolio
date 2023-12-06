@@ -6,18 +6,21 @@
     <title>Kiran Lama Lopchan | Personal Website</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/026f1a1337.js" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
 </head>
 <body>
     <div id="header">
         <div class="container">
             <nav>
-                <img src="images/logo.png" class="logo" alt="logo images">
+                <a href="index.html">
+                    <img src="images/logo.png" class="logo" alt="logo images">
+                </a>
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                     <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
                 <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
@@ -118,112 +121,40 @@
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="images/work-1.png" alt="work1">
+                    <img src="images/socialbook/main.png" alt="work1">
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>The app connects you to the talented people around the world.
-                            Download it from play store.
+                        <h3>Social Media App / SocialBook</h3>
+                        <p>Introducing SocialBook, a cutting edge social media application that aims to bridge the gap, between people. This innovative app seamlessly integrates with your portfolio enabling you to display your work while connecting with clients, collaborators and professionals in your industry. Embrace the future of networking and join SocialBook today!
                         </p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://github.com/kiranlamalopchan/SocialBook"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/work-2.png" alt="work2">
+                    <img src="images/edulms/home.png" alt="work2">
                     <div class="layer">
-                        <h3>Music App</h3>
-                        <p>The app connects you to the talented people around the world.
-                            Download it from play store.
+                        <h3>EDU LMS</h3>
+                        <p>This app (EDU LMS) was developed for managing the learning system.User can create their respective id and can view the course detail with all list of work to be done.
                         </p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://lopchan11643.pythonanywhere.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/work-3.png" alt="work3">
+                    <img src="images/ecommerce/main.png" alt="work3">
                     <div class="layer">
                         <h3>Online Shopping App</h3>
-                        <p>The app connects you to the talented people around the world.
-                            Download it from play store.
+                        <p>This project was built for online business. It is a digital platform that enables business to sell products or
+                            services online to customers. It allows customers to become products or services, add them to a virtual
+                            shopping cart, and checkout and deliver the products
                         </p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://lopchan.pythonanywhere.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
             <a href="#" class="btn">See more</a>
         </div>
     </div>
-
-    <!----contact----->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i>lamak540@gmail.com</p>
-                    <p><i class="fa-solid fa-square-phone"></i>0450212324</p>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/kiran.lama.9615/"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.linkedin.com/in/kiran-lama-lopchan-5504901a7/"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/kiran.lama.9615/"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/kiran-lama-lopchan-5504901a7/"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>Copyright © kiran Lama. Made with <i class="fa-solid fa-heart"></i> by Kiran Lama Lopchan</p>
-        </div>
+    <div class="copyright">
+        <p>Copyright © kiran Lama. Made with <i class="fa-solid fa-heart"></i> by Kiran Lama Lopchan</p>
     </div>
-    <script>
-        let tablinks = document.getElementsByClassName("tab-links");
-        let tabcontents = document.getElementsByClassName("tab-contents");
-    
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
-    <script>
-        let sidemenu = document.getElementById("sidemenu");
-        function openmenu(){
-            sidemenu.style.right = "0";
-        }
-        function closemenu(){
-            sidemenu.style.right = "-200px";
-        }
-    </script>
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxwr2bM8U6EWiLD5Pu7Un67RoO_bDQ0hzDA8s4lBhZOVTSfH-K3fkEwYsXmQd2pwJJl/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
-      
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML = "Message sent sucessfully"
-                setTimeout(function(){
-                    msg.innerHTML = ""
-                },5000)
-                form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script>
 </body>
 </html>
