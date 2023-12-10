@@ -1,23 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kiran Lama Lopchan | Personal Website</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/026f1a1337.js" crossorigin="anonymous"></script>
-    <script src="js/index.js"></script>
 
-<script>
-let sidemenu = document.getElementById("sidemenu");
-function openmenu(){
-    sidemenu.style.right = "0";
-}
-function closemenu(){
-    sidemenu.style.right = "-200px";
-}
-</script>
 </head>
+
 <body>
     <div id="header">
         <div class="container">
@@ -29,8 +21,9 @@ function closemenu(){
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
                     <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
                 <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
@@ -50,7 +43,17 @@ function closemenu(){
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>I have a background, as a software developer. I am deeply passionate about my work. My expertise spans across programming languages and web development technologies. For creating efficient web applications I am well versed in Python and Django. Moreover I have experience with.Net programming for building both Windows applications and web services as Java for its object oriented capabilities. When it comes to crafting user interfaces I have a foundation in front end technologies like HTML, CSS and JavaScript to ensure responsive designs. Database management is another area of my expertise; I have worked with MySQL and PostgreSQL to maintain data integrity and efficiency. Additionally my familiarity with JavaScript frameworks allows me to deliver feature rich web experiences. Keeping up with the industry trends is important to me which is why I am always seeking opportunities to expand my skill set while offering solutions to complex challenges. Lets build something extraordinary together!</p>
+                    <p>I have a background, as a software developer. I am deeply passionate about my work. My expertise
+                        spans across programming languages and web development technologies. For creating efficient web
+                        applications I am well versed in Python and Django. Moreover I have experience with.Net
+                        programming for building both Windows applications and web services as Java for its object
+                        oriented capabilities. When it comes to crafting user interfaces I have a foundation in front
+                        end technologies like HTML, CSS and JavaScript to ensure responsive designs. Database management
+                        is another area of my expertise; I have worked with MySQL and PostgreSQL to maintain data
+                        integrity and efficiency. Additionally my familiarity with JavaScript frameworks allows me to
+                        deliver feature rich web experiences. Keeping up with the industry trends is important to me
+                        which is why I am always seeking opportunities to expand my skill set while offering solutions
+                        to complex challenges. Lets build something extraordinary together!</p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -98,26 +101,47 @@ function closemenu(){
                 <div>
                     <i class="fa-solid fa-code"></i>
                     <h2>Web Development</h2>
-                    <p>I have experience, as a web developer specializing in Python and Django. I have a foundation in these technologies. Can provide robust and scalable backend solutions for modern web applications. Additionally my proficiency in Java enables me to tackle programming challenges ensuring the development of efficient systems. I am skilled in creating dynamic user interfaces using JavaScript frameworks, which results in interactive experiences, for users. Furthermore I possess an understanding of database management allowing me to ensure data integrity and optimize performance.
+                    <p>I have experience, as a web developer specializing in Python and Django. I have a foundation in
+                        these technologies. Can provide robust and scalable backend solutions for modern web
+                        applications. Additionally my proficiency in Java enables me to tackle programming challenges
+                        ensuring the development of efficient systems. I am skilled in creating dynamic user interfaces
+                        using JavaScript frameworks, which results in interactive experiences, for users. Furthermore I
+                        possess an understanding of database management allowing me to ensure data integrity and
+                        optimize performance.
                     </p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-crop-simple"></i>
                     <h2>UI/UX Design</h2>
-                    <p>I am proud of my skills, in crafting the most cutting edge web application designs. My attention to detail and knowledge of user experience principles allow me to create highly functional designs. I stay up, to date with the design trends and technologies to develop interfaces that not attract users but also improve usability. Whether its an minimalistic aesthetic or a vibrant and captivating design I strive to deliver top notch results.</p>
+                    <p>I am proud of my skills, in crafting the most cutting edge web application designs. My attention
+                        to detail and knowledge of user experience principles allow me to create highly functional
+                        designs. I stay up, to date with the design trends and technologies to develop interfaces that
+                        not attract users but also improve usability. Whether its an minimalistic aesthetic or a vibrant
+                        and captivating design I strive to deliver top notch results.</p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-desktop"></i>
                     <h2>Desktop Software Development</h2>
-                    <p>I have a grasp of.NET programming. I am skilled, at creating desktop software solutions that work smoothly with the Windows environment. By utilizing the capabilities of the.NET framework I am able to bring efficiency and dependability to desktop applications. Additionally I specialize in designing user interfaces and implementing functionalities guaranteeing that the software not only meets but surpasses user expectations.</p>
+                    <p>I have a grasp of.NET programming. I am skilled, at creating desktop software solutions that work
+                        smoothly with the Windows environment. By utilizing the capabilities of the.NET framework I am
+                        able to bring efficiency and dependability to desktop applications. Additionally I specialize in
+                        designing user interfaces and implementing functionalities guaranteeing that the software not
+                        only meets but surpasses user expectations.</p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-database"></i>
                     <h2>Database Knowledge</h2>
-                    <p>I have an understanding of database management, which's an important part of my skillset, as a developer. I am skilled in designing and optimizing database structures to ensure that data is secure and efficient in all of my projects. I have experience with database systems allowing me to choose and implement the appropriate solutions for different applications. Whether it involves creating SQL queries or seamlessly integrating databases into web and desktop applications my goal is to create scalable data solutions. I recognize the role that databases play in software performance. I am dedicated to applying this knowledge to deliver reliable high performing and well structured database solutions, for any development project.
+                    <p>I have an understanding of database management, which's an important part of my skillset, as a
+                        developer. I am skilled in designing and optimizing database structures to ensure that data is
+                        secure and efficient in all of my projects. I have experience with database systems allowing me
+                        to choose and implement the appropriate solutions for different applications. Whether it
+                        involves creating SQL queries or seamlessly integrating databases into web and desktop
+                        applications my goal is to create scalable data solutions. I recognize the role that databases
+                        play in software performance. I am dedicated to applying this knowledge to deliver reliable high
+                        performing and well structured database solutions, for any development project.
                     </p>
                     <a href="#">Learn more</a>
                 </div>
@@ -125,46 +149,12 @@ function closemenu(){
         </div>
     </div>
 
-    <!-----------portfolio------------>
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/socialbook/main.png" alt="work1">
-                    <div class="layer">
-                        <h3>Social Media App / SocialBook</h3>
-                        <p>Introducing SocialBook, a cutting edge social media application that aims to bridge the gap, between people. This innovative app seamlessly integrates with your portfolio enabling you to display your work while connecting with clients, collaborators and professionals in your industry. Embrace the future of networking and join SocialBook today!
-                        </p>
-                        <a href="https://github.com/kiranlamalopchan/SocialBook" target="_blank" ><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/edulms/home.png" alt="work2">
-                    <div class="layer">
-                        <h3>EDU LMS</h3>
-                        <p>This app (EDU LMS) was developed for managing the learning system.User can create their respective id and can view the course detail with all list of work to be done.
-                        </p>
-                        <a href="https://lopchan11643.pythonanywhere.com/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/ecommerce/main.png" alt="work3">
-                    <div class="layer">
-                        <h3>Online Shopping App</h3>
-                        <p>This project was built for online business. It is a digital platform that enables business to sell products or
-                            services online to customers. It allows customers to become products or services, add them to a virtual
-                            shopping cart, and checkout and deliver the products
-                        </p>
-                        <a href="https://lopchan.pythonanywhere.com/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-            </div>
-            <a href="#" class="btn">See more</a>
-        </div>
-    </div>
     <div class="copyright">
         <p>Copyright © kiran Lama. Made with <i class="fa-solid fa-heart"></i> by Kiran Lama Lopchan</p>
     </div>
+
+    <script src="js/index.js"></script>
+
 </body>
+
 </html>
